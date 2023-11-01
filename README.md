@@ -22,4 +22,7 @@ Librarian :<hr>
 <li>Remove</li>
 </ol>
 
-
+<i>oct 31, 2023 :</i><br>
+I just completed the login and signup page of the library, now i must be fast for other pages to be till Nov 15,2023.
+There is remaining so much work to do so i thing i have to make a list of work and complete them squencely so i can complete this project till date.
+let's do it..
