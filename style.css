@@ -268,7 +268,7 @@ section .colour:nth-child(3) {
 }
 
 .form .input__box input[type="submit"] {
-    color: #666;
+    color: #504a4a;
     cursor: pointer;
     background: #fff;
     max-width: 150px;
@@ -276,13 +276,17 @@ section .colour:nth-child(3) {
     margin-bottom: 20px;
 }
 
+.form .checkbox {
+    color: rgb(65, 57, 57);
+}
+
 .forget {
-    color: #666;
+    color: #221f1f;
     margin-top: 10px;
 }
 
 .forget a {
-    color: #464b55;
+    color: #3d4044;
     font-weight: 600;
     text-decoration: none;
 }
