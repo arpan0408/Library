@@ -5,15 +5,32 @@
     font-family: "Poppins", sans-serif;
 }
 
+html {
+    font-size: 62.5%;
+}
+
+@media (max-width:998px) {
+    html {
+        font-size: 55%;
+    }
+}
+
+@media (max-width:768px) {
+    html {
+        font-size: 45%;
+    }
+}
+
 body {
     overflow: hidden;
 }
+
 header {
     position: fixed;
     top: 0;
     left: 0;
     width: 100%;
-    padding: 20px;
+    padding: 2rem;
     /* background: rgb(35, 176, 201); */
     display: flex;
     justify-content: space-between;
@@ -22,14 +39,14 @@ header {
 }
 
 .logo {
-    font-size: 2em;
-    color: #78f0f0;
+    font-size: 3em;
+    color: #445de9;
     user-select: none;
-    width: 110px;
+    width: 11rem;
     display: flex;
-    min-height: 0px;
+    min-height: 0rem;
     position: relative;
-    border-radius: 10px;
+    border-radius: 1rem;
     align-items: center;
     justify-content: center;
     backdrop-filter: blur(10px);
@@ -42,22 +59,22 @@ header {
 
 .navigation a {
     position: relative;
-    font-size: 1.1em;
-    color: #0aeea2;
+    font-size: 2rem;
+    color: #445de9;
     text-decoration: none;
     font-weight: 500;
-    margin-left: 40px;
+    margin-left: 4rem;
 }
 
 .navigation a::after {
     content: '';
     position: absolute;
     left: 0;
-    bottom: -6px;
+    bottom: -.6rem;
     width: 100%;
-    height: 3px;
-    background: #f0ec12;
-    border-radius: 5px;
+    height: .3rem;
+    background: #6a6d6a;
+    border-radius: .5rem;
     transform: scaleX(0);
     transition: transform .5s;
 }
@@ -81,25 +98,25 @@ section .colour {
 }
 
 section .colour:nth-child(1) {
-    top: -350px;
-    width: 600px;
-    height: 600px;
+    top: -35rem;
+    width: 60rem;
+    height: 60rem;
     background: #0ba1a1;
 }
 
 section .colour:nth-child(2) {
-    left: 100px;
-    width: 500px;
-    height: 500px;
-    bottom: -150px;
+    left: 10rem;
+    width: 50rem;
+    height: 50rem;
+    bottom: -15rem;
     background: #ffa500;
 }
 
 section .colour:nth-child(3) {
-    right: 100px;
-    bottom: 50px;
-    width: 300px;
-    height: 300px;
+    right: 10rem;
+    bottom: 5rem;
+    width: 30rem;
+    height: 30rem;
     background: #2b67f3;
 }
 
@@ -109,7 +126,7 @@ section .colour:nth-child(3) {
 
 .box .square {
     position: absolute;
-    border-radius: 10px;
+    border-radius: 1rem;
     backdrop-filter: blur(5px);
     background: rgba(255, 255, 255, 0.1);
     animation-delay: calc(-1s * var(--i));
@@ -124,57 +141,57 @@ section .colour:nth-child(3) {
 
     0%,
     100% {
-        transform: translateY(-40px);
+        transform: translateY(-4rem);
     }
 
     50% {
-        transform: translateY(40px);
+        transform: translateY(4rem);
     }
 }
 
 .box .square:nth-child(1) {
-    top: -50px;
-    left: -60px;
-    width: 100px;
-    height: 100px;
+    top: -5rem;
+    left: -6rem;
+    width: 10rem;
+    height: 10rem;
 }
 
 .box .square:nth-child(2) {
     z-index: 2;
-    top: 150px;
-    left: -100px;
-    width: 120px;
-    height: 120px;
+    top: 15rem;
+    left: -10rem;
+    width: 12rem;
+    height: 12rem;
 }
 
 .box .square:nth-child(3) {
     z-index: 2;
-    width: 80px;
-    height: 80px;
-    right: -50px;
-    bottom: -60px;
+    width: 8rem;
+    height: 8rem;
+    right: -5rem;
+    bottom: -6rem;
 }
 
 .box .square:nth-child(4) {
-    left: 100px;
-    width: 50px;
-    height: 50px;
-    bottom: -80px;
+    left: 10rem;
+    width: 5rem;
+    height: 5rem;
+    bottom: -8rem;
 }
 
 .box .square:nth-child(5) {
-    top: -80px;
-    left: 140px;
-    width: 60px;
-    height: 60px;
+    top: -8rem;
+    left: 14rem;
+    width: 6rem;
+    height: 6rem;
 }
 
 .container {
-    width: 400px;
+    width: 40rem;
     display: flex;
-    min-height: 400px;
+    min-height: 40rem;
     position: relative;
-    border-radius: 10px;
+    border-radius: 1rem;
     align-items: center;
     justify-content: center;
     backdrop-filter: blur(5px);
@@ -188,17 +205,17 @@ section .colour:nth-child(3) {
 .form {
     width: 100%;
     height: 100%;
-    padding: 40px;
+    padding: 4rem;
     position: relative;
 }
 
 .form h2 {
     color: #fff;
-    font-size: 30px;
+    font-size: 3rem;
     font-weight: 600;
     position: relative;
-    letter-spacing: 1.5px;
-    margin-bottom: 50px;
+    letter-spacing: .15rem;
+    margin-bottom: 5rem;
     text-align: center;
 }
 
@@ -215,22 +232,22 @@ section .colour:nth-child(3) {
 .form h2 {
     position: relative;
     right: .5cm;
-    font-size: 2em;
+    font-size: 3.5em;
     color: whitesmoke;
     text-decoration: none;
     font-weight: 600;
-    margin-left: 40px;
+    margin-left: 4rem;
 }
 
 .form h2::after {
     content: '';
     position: absolute;
     left: 2cm;
-    bottom: -6px;
+    bottom: -.6rem;
     width: 50%;
-    height: 3px;
+    height: .3rem;
     background: #e6eaeb;
-    border-radius: 5px;
+    border-radius: .5rem;
     transform: scale(0);
     transition: transform .5s;
 }
@@ -241,9 +258,9 @@ section .colour:nth-child(3) {
 }
 
 .form .input__box {
-    height: 50px;
+    height: 5rem;
     width: 100%;
-    margin-top: 20px;
+    margin-top: 2rem;
     text-align: center;
 }
 
@@ -252,10 +269,10 @@ section .colour:nth-child(3) {
     color: #fff;
     border: none;
     outline: none;
-    font-size: 16px;
-    padding: 10px 20px;
-    letter-spacing: 1px;
-    border-radius: 35px;
+    font-size: 1.6rem;
+    padding: 1rem 2rem;
+    letter-spacing: .1rem;
+    border-radius: 3.5rem;
     background: rgba(255, 255, 255, 0.2);
     border: 1px solid rgba(255, 255, 255, 0.5);
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
@@ -271,22 +288,24 @@ section .colour:nth-child(3) {
     color: #504a4a;
     cursor: pointer;
     background: #fff;
-    max-width: 150px;
+    max-width: 15rem;
     font-weight: 600;
-    margin-bottom: 20px;
+    margin-bottom: 2rem;
 }
 
 .form .checkbox {
     color: rgb(65, 57, 57);
+    font-size: 1.4rem;
 }
 
 .forget {
-    color: #221f1f;
-    margin-top: 10px;
+    color: #0b2c8a;
+    margin-top: 1rem;
+    font-size: 1.4rem;
 }
 
 .forget a {
-    color: #3d4044;
+    color: #0b2c8a;
     font-weight: 600;
     text-decoration: none;
 }
