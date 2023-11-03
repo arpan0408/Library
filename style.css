@@ -21,6 +21,8 @@ html {
     }
 }
 
+/* Login / Signup page :  */
+
 body {
     overflow: hidden;
 }
@@ -31,6 +33,7 @@ header {
     left: 0;
     width: 100%;
     padding: 2rem;
+    text-shadow: #504a4a;
     /* background: rgb(35, 176, 201); */
     display: flex;
     justify-content: space-between;
@@ -51,7 +54,7 @@ header {
     justify-content: center;
     backdrop-filter: blur(10px);
     background: rgba(255, 255, 255, 0.1);
-    box-shadow: 0 25px 45px rgba(0, 0, 0, 0.1);
+    box-shadow: -5px 5px 5px rgba(0, 0, 0, 0.2);
     border: 1.5px solid rgba(255, 255, 255, 0.5);
     border-right: 1px solid rgba(255, 255, 255, 0.2);
     border-bottom: 1px solid rgba(255, 255, 255, 0.2);
@@ -73,7 +76,7 @@ header {
     bottom: -.6rem;
     width: 100%;
     height: .3rem;
-    background: #6a6d6a;
+    background: rgb(224, 138, 57);
     border-radius: .5rem;
     transform: scaleX(0);
     transition: transform .5s;
@@ -195,9 +198,9 @@ section .colour:nth-child(3) {
     align-items: center;
     justify-content: center;
     backdrop-filter: blur(5px);
-    background: rgba(255, 255, 255, 0.1);
+    background: rgba(46, 43, 43, 0.1);
     box-shadow: 0 25px 45px rgba(0, 0, 0, 0.1);
-    border: 1px solid rgba(255, 255, 255, 0.5);
+    border: 1.8px solid rgba(255, 255, 255, 0.5);
     border-right: 1px solid rgba(255, 255, 255, 0.2);
     border-bottom: 1px solid rgba(255, 255, 255, 0.2);
 }
@@ -308,4 +311,31 @@ section .colour:nth-child(3) {
     color: #0b2c8a;
     font-weight: 600;
     text-decoration: none;
+}
+
+/* About : */
+
+.about_box {
+    width: 8px;
+    height: 12px;
+    object-fit: cover;
+}
+
+.card-img-top {
+    max-inline-size: 100%;
+    block-size: auto;
+}
+
+.card {
+    /* Add shadows to create the "card" effect */
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    transition: 0.5s;
+    width: 100%;
+    text-align: center;
+    margin-left: 0;
+    margin-right: 50%;
+}
+
+.card:hover {
+    box-shadow: 0 8px 16px 0 rgba(.5, .5, .5, 1);
 }
