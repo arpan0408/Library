@@ -1,3 +1,20 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Dashboard</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"/>
+<style>
+
+
+
+
 /* import kya ha google font cdn link*/
 @import url("http://fonts.googleapis.com/css2?family=poppins:wght@400;600&display=swap");
 *{
@@ -7,9 +24,13 @@ border: none;
 outline: none;
 box-sizing: border-box;
 font-family: "poppins",sans-serif;
+
+
 }
 body{
     display: flex;
+    background-image: url("https://www.wipremiertrivia.com/wp-content/uploads/2019/07/Books-Wallpaper.jpg");
+    justify-content: center;
 
 }
 .sidebar{
@@ -139,19 +160,6 @@ transform: scale(1.2);
  }
  /* card container*/
 
- 
-
-
-
-
-
-
-
-
-
-
-
-
  .dashboard {
     background-color: #b5adc9;
     border-radius: 5px;
@@ -186,46 +194,89 @@ transform: scale(1.2);
         opacity: 1;
     }
 }
-.image-section{
-    text-align: center;
-    justify-content: center;
-    text-decoration:underline;
-    color: rgb(40, 82, 82)
+ </style>
+<head>
+    <body>
+    <div class="sidebar">
+        <div class="logo"></div>
+        <ul class="menu">
+  <li class="active">
+  <a href="admindashboard.html">
+  <i class="fa fa-tachometer"></i>
+  <span>Admin Dashboard</span>
+  </a>
+  </li>
+  <li>
+    <a href="addstudent.html">
+    <i class="fa fa-user"></i>
+    <span>Add Student</span>
+    </a>
+    </li>
+    <li>
+        <a href="issuebookadmin.html">
+        <i class="fa fa-book"></i>
+        <span>Issue book</span>
+        </a>
+        </li>
+  
+        <li>
+            <a href="admin.html">  
+            <i class="fa fa-book"></i>
+            <span>Add Book</span>
+            </a>
+            </li>
+            <li>
+                <a href="issuereportadmin.html">
+                <i class="fa fa-book"></i>
+                <span>Book report</span>
+                </a>
+                </li>
+        <li>
+            <a href="bookrequestadmin.html">
+         <i class="fa fa-book" aria-hidden="true"></i>
+            <span>Book Request</span>
+            </a>
+            </li>
+            <li>
+                <a href="adminsetting.html">
+                <i class="fa fa-cog"></i>
+                <span>setting</span>
+                </a>
+                </li>
+                <li class="logout">
+                    <a href="#">
+                    <i class="fa fa-sign-out"></i>
+                    <span>Logout</span>
+                    </a>
+                    </li>
+        </ul>
+    </div>
 
-}
 
 
-.imagebox
-{
-    padding: 30px;
-    margin: 50px;
-    justify-content: center;
-    text-align: center;
-    display: flexbox;
-    row-gap: 10px;
-    align-items: center;
-    justify-items: center;
-    box-shadow: 0 0 10px ;
-}
 
-img{
-    display: flexbox;
-    width: 25%;
-    height: 200px;
-    object-fit: cover;
-    padding: 20px;
-    margin:10px;
-    border: 2em black;
-    box-sizing: 25px;
-    cursor: pointer;
-}
+</ul>
+</div>
+<div class="main--content">
+<div class="header--wrapper">
+<div class="header--title">
+    <span>Admin</span>
+    <h2>Dashboard</h2>
+</div>
 
-.b_a
-{
-    display:inline;
-    justify-content:left;
-    align-items:left;   
+<div class="user--info">
+    <div class="search--box"></div>
+    <i class="fa fa-solid fa-search"></i>
+    <input type="text"placeholder="search" />
+</div>
+</body>
+</html> 
 
-}
 
- 
+
+
+
+
+
+
+

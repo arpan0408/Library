@@ -1,0 +1,214 @@
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Library Book Request</title>
+
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"/>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-image: url("https://www.wipremiertrivia.com/wp-content/uploads/2019/07/Books-Wallpaper.jpg");
+            background-size: cover;
+
+
+
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #f0f0f0;
+            border-radius: 10px;
+        }
+
+        h1 {
+            font-size: 24px;
+            margin-bottom: 20px;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 5px;
+        }
+
+        input[type="text"], select {
+            width: 100%;
+            padding: 8px;
+            margin-bottom: 15px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        textarea {
+            width: 100%;
+            padding: 8px;
+            margin-bottom: 15px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            resize: none;
+        }
+
+        button[type="submit"] {
+            width: 100%;
+            padding: 10px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        button[type="submit"]:hover {
+            background-color: #45a049;
+        }
+        .sidebar{
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    width: 50px;
+    height: 100vh;
+    padding: 0.17rem;
+    color:#fff ;
+    overflow: hidden;
+    transition: all 0.5s linear;
+    background: rgba(113,99,186,255);
+}
+.sidebar:hover{
+    width: 200px;
+    transition: 0.1s;
+}
+
+
+
+.logo{
+    height:80 ;
+    padding: 16px;
+}
+.menu{
+    height:88%;
+    position: relative;
+    list-style: none;
+    padding: 0;
+}
+.menu li{
+    padding:1rem;
+    margin:8px 0;
+    border-radius: all 0.5s ease-in-out;
+
+}
+.menu li:hover,
+active{
+    background: #e0e0e058;
+}
+.menu a{
+    color:#fff;
+    font-size: 14px;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+
+}
+.menu a span{
+    overflow:hidden;
+
+}
+.menu a i{
+    font-size: 1.2rem;
+}
+.logout{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;}
+
+    </style>
+</head>
+<body>
+    <div class="sidebar">
+        <div class="logo"></div>
+        <ul class="menu">
+  <li class="active">
+  <a href="admindashboard.html">
+  <i class="fa fa-tachometer"></i>
+  <span>Admin Dashboard</span>
+  </a>
+  </li>
+  <li>
+    <a href="addstudent.html">
+    <i class="fa fa-user"></i>
+    <span>Add Student</span>
+    </a>
+    </li>
+    <li>
+        <a href="issuebookadmin.html">
+        <i class="fa fa-book"></i>
+        <span>Issue book</span>
+        </a>
+        </li>
+  
+        <li>
+            <a href="admin.html">  
+            <i class="fa fa-book"></i>
+            <span>Add Book</span>
+            </a>
+            </li>
+            <li>
+                <a href="issuereportadmin.html">
+                <i class="fa fa-book"></i>
+                <span>Book report</span>
+                </a>
+                </li>
+        <li>
+            <a href="bookrequestadmin.html">
+         <i class="fa fa-book" aria-hidden="true"></i>
+            <span>Book Request</span>
+            </a>
+            </li>
+            <li>
+                <a href="adminsetting.html">
+                <i class="fa fa-cog"></i>
+                <span>setting</span>
+                </a>
+                </li>
+                <li class="logout">
+                    <a href="#">
+                    <i class="fa fa-sign-out"></i>
+                    <span>Logout</span>
+                    </a>
+                    </li>
+        </ul>
+        </div>
+
+    <div class="container">
+        <h1>Request a Book</h1>
+        <form action="/submit-request" method="post">
+            <label for="title">Book Title:</label>
+            <input type="text" id="title" name="title" required>
+
+            <label for="author">Author:</label>
+            <input type="text" id="author" name="author" required>
+
+            <label for="category">Category:</label>
+            <select id="category" name="category" required>
+                <option value="computer Science">computer Science</option>
+                <option value="non-fiction">Non-Fiction</option>
+                <option value="java">core java</option>
+                <option value="c#">c#</option>
+                <option value="c language">C language</option>
+            </select>
+
+            <label for="additional-info">Additional Information:</label>
+            <textarea id="additional-info" name="additional-info" rows="4"></textarea>
+
+            <button type="submit">Submit Request</button>
+        </form>
+    </div>
+</body>
+</html>

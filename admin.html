@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>admin</title>
+   
+<link rel="stylesheet" href="css/admin.css">
+
+   <link
+   rel="stylesheet"
+   href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"/>
+
+
+</head>
+<body>
+    
+    <div class="sidebar">
+        <div class="logo"></div>
+        <ul class="menu">
+  <li class="active">
+  <a href="admindashboard.html">
+  <i class="fa fa-tachometer"></i>
+  <span>Admin Dashboard</span>
+  </a>
+  </li>
+  <li>
+    <a href="addstudent.html">
+    <i class="fa fa-user"></i>
+    <span>Add Student</span>
+    </a>
+    </li>
+    <li>
+        <a href="issuebookadmin.html">
+        <i class="fa fa-book"></i>
+        <span>Issue book</span>
+        </a>
+        </li>
+  
+        <li>
+            <a href="admin.html">  
+            <i class="fa fa-book"></i>
+            <span>Add Book</span>
+            </a>
+            </li>
+            <li>
+                <a href="issuereportadmin.html">
+                <i class="fa fa-book"></i>
+                <span>Book report</span>
+                </a>
+                </li>
+        <li>
+            <a href="bookrequestadmin.html">
+         <i class="fa fa-book" aria-hidden="true"></i>
+            <span>Book Request</span>
+            </a>
+            </li>
+            <li>
+                <a href="adminsetting.html">
+                <i class="fa fa-cog"></i>
+                <span>setting</span>
+                </a>
+                </li>
+                <li class="logout">
+                    <a href="#">
+                    <i class="fa fa-sign-out"></i>
+                    <span>Logout</span>
+                    </a>
+                    </li>
+        </ul>
+    </div>
+
+    <div class="form-container">
+        <form>
+        <h2>Add New Book</h2>
+        <br><br>
+        <div class="user--info">
+            <div class="search--box"></div>
+            <i class="fa fa-solid fa-search"></i>
+            <input type="text"placeholder="search" />
+        </div>
+        <label for="text"> Book Name:</label>
+        <input type="text" id="search-book" name="search" class="search-bar">
+        <br><br>
+        <label for="text"> Details:</label>
+        <input type="text" id="Details" name="Details" class="search-Details">
+
+  <br><br>
+        <label for="text"> Author:</label>
+        <input type="text" id="Author" name="Author" class="search-Author">
+        
+        <br><br>
+        <label for="text"> Publication:</label>
+        <input type="text" id="Publication" name="Publication" class="Publication">
+        <br><br>
+        <label for="text"> Branch:</label>
+        <Select>
+            <option value="BCA" >BCA</option>
+            <option value="B.TEC" >BTEC</option>
+            <option value="mCA" >MCA</option>
+            <option value="B.Com" >B.Com</option>
+            </Select>
+        
+            <br><br>
+            <label for="text"> price:</label>
+            <input type="text" id="price" name="price" class="search--price">
+            <br><br>
+            <label for="text"> quantity:</label>
+            <input type="number" id="quantity" name="quantity" class="search--quantity">
+            <br><br>
+            <label for="text"> Book photo:</label>
+            <input type="file" id ="book-photo"name="photo"class="search--photo">
+            <br><br>
+            <button type="submit">submit</button>
+            </form>
+
+</div>
+</body>
+</html>

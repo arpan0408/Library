@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Library Management System</title>
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"/>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f2f5;
+            background-image: url("  https://images.pexels.com/photos/1130980/pexels-photo-1130980.jpeg?cs=srgb&dl=assortment-book-bindings-books-1130980.jpg&fm=jpg ");
+            background-attachment: fixed;
+            background-size: cover;
+        }
+
+        .container {
+            max-width: 500px;
+            margin: 30px auto;
+            padding: 20px;
+            background-color: #fff;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            border-radius: 5px;
+        }
+
+        h2 {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 5px;
+        }
+
+        input[type="text"], input[type="email"], input[type="tel"] {
+            width: 100%;
+            padding: 8px;
+            margin-bottom: 10px;
+            border: 1px solid #ddd;
+            border-radius: 3px;
+            font-size: 14px;
+        }
+
+        .btn {
+            display: block;
+            width: 100%;
+            padding: 10px;
+            margin-top: 10px;
+            background-color: #007bff;
+            color: #fff;
+            text-align: center;
+            border: none;
+            border-radius: 3px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        .btn:hover {
+            background-color: #0056b3;
+        }
+
+
+
+        .sidebar{
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    width: 50px;
+    height: 100vh;
+    padding: 0.17rem;
+    color:#fff ;
+    overflow: hidden;
+    transition: all 0.5s linear;
+    background: rgba(113,99,186,255);
+}
+.sidebar:hover{
+    width: 200px;
+    transition: 0.1s;
+}
+
+
+
+.logo{
+    height:80 ;
+    padding: 16px;
+}
+.menu{
+    height:88%;
+    position: relative;
+    list-style: none;
+    padding: 0;
+}
+.menu li{
+    padding:1rem;
+    margin:8px 0;
+    border-radius: all 0.5s ease-in-out;
+
+}
+.menu li:hover,
+active{
+    background: #e0e0e058;
+}
+.menu a{
+    color:#fff;
+    font-size: 14px;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+
+}
+.menu a span{
+    overflow:hidden;
+
+}
+.menu a i{
+    font-size: 1.2rem;
+}
+.logout{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;}
+    </style>
+</head>
+<body>
+
+
+
+
+    <div class="sidebar">
+        <div class="logo"></div>
+        <ul class="menu">
+  <li class="active">
+  <a href="admindashboard.html">
+  <i class="fa fa-tachometer"></i>
+  <span>Admin Dashboard</span>
+  </a>
+  </li>
+  <li>
+    <a href="addstudent.html">
+    <i class="fa fa-user"></i>
+    <span>Add Student</span>
+    </a>
+    </li>
+    <li>
+        <a href="issuebookadmin.html">
+        <i class="fa fa-book"></i>
+        <span>Issue book</span>
+        </a>
+        </li>
+  
+        <li>
+            <a href="admin.html">  
+            <i class="fa fa-book"></i>
+            <span>Add Book</span>
+            </a>
+            </li>
+            <li>
+                <a href="issuereportadmin.html">
+                <i class="fa fa-book"></i>
+                <span>Book report</span>
+                </a>
+                </li>
+        <li>
+            <a href="bookrequestadmin.html">
+         <i class="fa fa-book" aria-hidden="true"></i>
+            <span>Book Request</span>
+            </a>
+            </li>
+            <li>
+                <a href="adminsetting.html">
+                <i class="fa fa-cog"></i>
+                <span>setting</span>
+                </a>
+                </li>
+                <li class="logout">
+                    <a href="#">
+                    <i class="fa fa-sign-out"></i>
+                    <span>Logout</span>
+                    </a>
+                    </li>
+        </ul>
+    </div>
+    <div class="container">
+        <h2>Issue Book</h2>
+        <form>
+            <label for="book-title">Book Title</label>
+            <input type="text" id="book-title" name="book-title" required>
+
+            <label for="student-name">Student Name</label>
+            <input type="text" id="student-name" name="student-name" required>
+
+            <label for="student-email">Student Email</label>
+            <input type="email" id="student-email" name="student-email" required>
+
+            <label for="student-phone">Student Phone</label>
+            <input type="tel" id="student-phone" name="student-phone" required>
+
+            <button type="submit" class="btn">Issue Book</button>
+        </form>
+    </div>
+</body>
+</html>
