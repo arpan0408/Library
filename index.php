@@ -1,5 +1,9 @@
 <!-- php code -->
 <?php
+<<<<<<< HEAD
+=======
+
+>>>>>>> 362d6323e851d4524fc45823a4c9e461a334eb66
 include 'dbconnect.php';
 
 

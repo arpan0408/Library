@@ -26,6 +26,7 @@ nav {
     height: 100vh;
     left: 0;
     background: #fff;
+<<<<<<< HEAD
     width: 5em;
     overflow: hidden;
     box-shadow: 0 20px 35px rgba(0, 0, 0, 0.1);
@@ -33,6 +34,11 @@ nav {
 }
 nav:hover {
     width: 15.8em;
+=======
+    width: 15.8em;
+    overflow: hidden;
+    box-shadow: 0 20px 35px rgba(0, 0, 0, 0.1);
+>>>>>>> 362d6323e851d4524fc45823a4c9e461a334eb66
 }
 
 .logo {
