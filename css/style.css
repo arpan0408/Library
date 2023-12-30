@@ -1,18 +1,21 @@
 /* import kya ha google font cdn link*/
 @import url("http://fonts.googleapis.com/css2?family=poppins:wght@400;600&display=swap");
-*{
-margin: 0;
-padding:0;
-border: none;
-outline: none;
-box-sizing: border-box;
-font-family: "poppins",sans-serif;
+
+* {
+    margin: 0;
+    padding: 0;
+    border: none;
+    outline: none;
+    box-sizing: border-box;
+    font-family: "poppins", sans-serif;
 }
-body{
+
+body {
     display: flex;
 
 }
-.sidebar{
+
+.sidebar {
     position: sticky;
     top: 0;
     left: 0;
@@ -20,47 +23,49 @@ body{
     width: 50px;
     height: 100vh;
     padding: 0.17rem;
-    color:#fff ;
+    color: #fff;
     overflow: hidden;
     transition: all 0.5s linear;
-    background: rgba(113,99,186,255);
+    background: rgba(113, 99, 186, 255);
     /* content-visibility:hidden; */
     align-items: center;
     justify-content: center;
 }
-.sidebar:hover{
+
+.sidebar:hover {
     width: 180px;
     transition: 0.1s;
 
     /* content-visibility:visible; */
-    
+
 }
-    
 
-
-
-.logo{
-    height:80 ;
+.logo {
+    height: 80;
     padding: 16px;
 }
-.menu{
-    height:88%;
+
+.menu {
+    height: 88%;
     position: relative;
     list-style: none;
     padding: 0;
 }
-.menu li{
-    padding:1rem;
-    margin:8px 0;
+
+.menu li {
+    padding: 1rem;
+    margin: 8px 0;
     border-radius: all 0.5s ease-in-out;
 
 }
+
 .menu li:hover,
-active{
+active {
     background: #e0e0e058;
 }
-.menu a{
-    color:#fff;
+
+.menu a {
+    color: #fff;
     font-size: 14px;
     text-decoration: none;
     display: flex;
@@ -68,91 +73,89 @@ active{
     gap: 1.5rem;
 
 }
-.menu a span{
-    overflow:hidden;
+
+.menu a span {
+    overflow: hidden;
 
 }
-.menu a i{
+
+.menu a i {
     font-size: 1.2rem;
 }
-.logout{
+
+.logout {
     position: absolute;
     bottom: 0;
     left: 0;
     width: 100%;
 }
+
 /* main body section****/
-.main--content{
+.main--content {
     position: relative;
-    background:#ebe9e9;
+    background: #ebe9e9;
     width: 100%;
-    padding: 1rem;   
+    padding: 1rem;
 }
-.header--wrapper img{
+
+.header--wrapper img {
     width: 50px;
     height: 50px;
     cursor: pointer;
-    border-radius: 50%;}
- .header--wrapper{
-    display:flex;
+    border-radius: 50%;
+}
+
+.header--wrapper {
+    display: flex;
     justify-content: space-between;
-    align-items: center; 
-    flex-wrap: wrap;   
+    align-items: center;
+    flex-wrap: wrap;
     background: #fff;
     border-radius: 5px;
     padding: 10px 2rm;
     margin-bottom: 1rem;
- }
- .header--title
- {
-    color: rgba(113,99,186,255);
+}
 
- }
- .user--info
- {
-    display:flex;
-    align-items:center;
-    gap:1rem;
- }
- .search--box
- {
-    background: rgb(236,236,236);
+.header--title {
+    color: rgba(113, 99, 186, 255);
+
+}
+
+.user--info {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.search--box {
+    background: rgb(236, 236, 236);
     border-radius: 15px;
-    color: rgba(113,99,186,255);
+    color: rgba(113, 99, 186, 255);
     display: flex;
     align-items: center;
     gap: 5px;
     padding: 4px 12px;
- }
- .search--box input{
+}
+
+.search--box input {
     background: transparent;
     padding: 10px;
- }
- .search--box i{
+}
+
+.search--box i {
     font-size: 1.2rem;
     cursor: pointer;
     transition: all 0.5s ease-out;
 
- }
- .search--box inline-size: hover{
-transform: scale(1.2);
- }
- /* card container*/
+}
 
- 
+.search--box:hover {
+    transform: scale(1.2);
+}
 
+/* card container*/
 
-
-
-
-
-
-
-
-
-
-
- .dashboard {
+.dashboard {
     background-color: #b5adc9;
     border-radius: 5px;
     padding: 20px;
@@ -182,21 +185,21 @@ transform: scale(1.2);
     0% {
         opacity: 0;
     }
+
     100% {
         opacity: 1;
     }
 }
-.image-section{
+
+.image-section {
     text-align: center;
     justify-content: center;
-    text-decoration:underline;
+    text-decoration: underline;
     color: rgb(40, 82, 82)
-
 }
 
 
-.imagebox
-{
+.imagebox {
     padding: 30px;
     margin: 50px;
     justify-content: center;
@@ -205,27 +208,24 @@ transform: scale(1.2);
     row-gap: 10px;
     align-items: center;
     justify-items: center;
-    box-shadow: 0 0 10px ;
+    box-shadow: 0 0 10px;
 }
 
-img{
+img {
     display: flexbox;
     width: 25%;
     height: 200px;
     object-fit: cover;
     padding: 20px;
-    margin:10px;
+    margin: 10px;
     border: 2em black;
     box-sizing: 25px;
     cursor: pointer;
 }
 
-.b_a
-{
-    display:inline;
-    justify-content:left;
-    align-items:left;   
+.b_a {
+    display: inline;
+    justify-content: left;
+    align-items: left;
 
 }
-
- 
