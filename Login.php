@@ -2,7 +2,6 @@
 <?php
 include 'dbconnect.php';
 
-<<<<<<< HEAD
 $showError = false;
 $exists = false;
 $login = false;
@@ -15,7 +14,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
     $result = mysqli_query($con, $sql);
     $num = mysqli_num_rows($result);
-=======
+
 $exists = false;
 $login = false;
 $showError = false;
@@ -37,7 +36,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         $showError = true;
         // echo 'Invalid username/password !';
     }
->>>>>>> 362d6323e851d4524fc45823a4c9e461a334eb66
+
 
     if ($num == 1) {
         $login = true;
@@ -45,12 +44,12 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         $_SESSION["loggedin"] = true;
         $_SESSION["username"] = $username;
         header("location: home.php");
-<<<<<<< HEAD
+
     } else
         $showError = "Invalid username/password !";
-=======
+
     } 
->>>>>>> 362d6323e851d4524fc45823a4c9e461a334eb66
+
 
 
 }
@@ -74,7 +73,6 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 <body>
     <header>
         <h2 class="logo">Library</h2>
-<<<<<<< HEAD
         <!-- Alert  -->
         <?php
         if ($login) {
@@ -86,8 +84,6 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         }
         ?>
         <!-- /Alert -->
-=======
->>>>>>> 362d6323e851d4524fc45823a4c9e461a334eb66
         <nav class="navigation">
             <a href="#">About</a>
             <a href="content.html">Contact</a>
@@ -107,11 +103,8 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             <div class="container">
                 <div class="form">
                     <h2>Login</h2>
-<<<<<<< HEAD
                     <form action="home.php" method="post">
-=======
                     <form method="post">
->>>>>>> 362d6323e851d4524fc45823a4c9e461a334eb66
                         <div class="input__box">
                             <input type="text" placeholder="Username" id="username" name="username" required />
                         </div>
@@ -120,22 +113,17 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
                         </div>
                         <div class="input__box">
                             <input type="submit" value="Login" />
-<<<<<<< HEAD
                             <!-- <button type="submit" class="input__box">Login</button> -->
                         </div>
                         <p class="forget">
                             Forgot Password? <a href="#">Click Here</a>
-=======
                         </div>
                         <p class="forget">
                             Forgot Password? <a href="forget.php">Click Here</a>
->>>>>>> 362d6323e851d4524fc45823a4c9e461a334eb66
                         </p>
                         <p class="forget">
                             Don't have an account? <a href="index.php">Sign up</a>
                         </p>
-<<<<<<< HEAD
-=======
                         <br>
                         <!-- Alert  -->
                         <br>
@@ -145,7 +133,6 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             <strong>Invalid !</strong> username / password</b>'; ?>
                         </h3>
                         <!-- /Alert -->
->>>>>>> 362d6323e851d4524fc45823a4c9e461a334eb66
                     </form>
                 </div>
             </div>

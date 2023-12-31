@@ -1,32 +1,28 @@
 <!-- php code -->
 <?php
-<<<<<<< HEAD
-=======
 
->>>>>>> 362d6323e851d4524fc45823a4c9e461a334eb66
 include 'dbconnect.php';
 
 
 $exists = false;
 $showAlert = false;
 
-if($_SERVER["REQUEST_METHOD" ] == "POST")
-{
+if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $username = $_POST["username"];
     $name = $_POST["name"];
     $email = $_POST["email"];
     $password = $_POST["password"];
-    if($exists==false)
-    $sql = "INSERT INTO `users` (`username`, `name`, `email`, `password`, `date`) VALUES('$username', '$name', '$email', '$password',current_timestamp())";
+    if ($exists == false)
+        $sql = "INSERT INTO `users` (`username`, `name`, `email`, `password`, `date`) VALUES('$username', '$name', '$email', '$password',current_timestamp())";
 
     $result = mysqli_query($con, $sql);
 
-    if($result)
-    $showAlert = true;
+    if ($result)
+        $showAlert = true;
     else
-    echo"not inserted in db";
-    
-    
+        echo "not inserted in db";
+
+
 }
 
 ?>
@@ -36,6 +32,7 @@ if($_SERVER["REQUEST_METHOD" ] == "POST")
 
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -47,17 +44,16 @@ if($_SERVER["REQUEST_METHOD" ] == "POST")
     <header>
         <h2 class="logo">Library</h2>
         <!-- Alert  -->
-        <?php 
-        if($showAlert)
-        {
-            echo 
-            '<div class="alert" role="alert">
+        <?php
+        if ($showAlert) {
+            echo
+                '<div class="alert" role="alert">
             <strong>Sucessfully!</strong> Your account has been created.<br><b>Now you can Login !</b>
             <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
-            </div>'; 
+            </div>';
         }
-      ?>
-      <!-- /Alert -->
+        ?>
+        <!-- /Alert -->
         <nav class="navigation">
             <a href="#">Home</a>
             <a href="#">About</a>
@@ -81,16 +77,16 @@ if($_SERVER["REQUEST_METHOD" ] == "POST")
 
                     <form action="index.php" method="post">
                         <div class="input__box">
-                            <input type="text" placeholder="Username" id="username" name="username" required/>
+                            <input type="text" placeholder="Username" id="username" name="username" required />
                         </div>
                         <div class="input__box">
-                            <input type="text" placeholder="Full Name" id="name" name="name" required/>
+                            <input type="text" placeholder="Full Name" id="name" name="name" required />
                         </div>
                         <div class="input__box">
                             <input type="email" placeholder="Email" id="email" name="email" required>
                         </div>
                         <div class="input__box">
-                            <input type="password" placeholder="Password" id="password" name="password" required/>
+                            <input type="password" placeholder="Password" id="password" name="password" required />
                         </div>
                         <div class="checkbox">
                             <input type="checkbox" required> I agree all terms & comditions</input>
@@ -108,4 +104,5 @@ if($_SERVER["REQUEST_METHOD" ] == "POST")
         </div>
     </section>
 </body>
+
 </html>

@@ -1,0 +1,354 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+@media (max-width:998px) {
+    html {
+        font-size: 55%;
+    }
+}
+
+@media (max-width:768px) {
+    html {
+        font-size: 45%;
+    }
+}
+
+/* Login / Signup page :  */
+
+body {
+    overflow: hidden;
+}
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 2rem;
+    text-shadow: #504a4a;
+    /* background: rgb(35, 176, 201); */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 99;
+}
+
+.logo {
+    font-size: 3em;
+    color: #445de9;
+    user-select: none;
+    width: 11rem;
+    display: flex;
+    min-height: 0rem;
+    position: relative;
+    border-radius: 1rem;
+    align-items: center;
+    justify-content: center;
+    backdrop-filter: blur(10px);
+    background: rgba(255, 255, 255, 0.1);
+    box-shadow: -5px 5px 5px rgba(0, 0, 0, 0.2);
+    border: 1.5px solid rgba(255, 255, 255, 0.5);
+    border-right: 1px solid rgba(255, 255, 255, 0.2);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.navigation a {
+    position: relative;
+    font-size: 2rem;
+    color: #445de9;
+    text-decoration: none;
+    font-weight: 500;
+    margin-left: 4rem;
+}
+
+.navigation a:hover {
+    font-size: large;
+    font-weight: 600;
+    border-radius: .6rem;
+    backdrop-filter: blur(1rem);
+    background: rgba(255, 255, 255, 0.1);
+    box-shadow: -5px 5px 5px rgba(0, 0, 0, 0.2);
+    border: 1.5px solid rgba(255, 255, 255, 0.5);
+    border-right: 1px solid rgba(255, 255, 255, 0.2);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.navigation a::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -.6rem;
+    width: 100%;
+    height: .3rem;
+    background: rgb(2, 2, 1);
+    border-radius: .5rem;
+    transform: scaleX(0);
+    transition: transform .5s;
+}
+
+.navigation a:hover::after {
+    font-size: 3rem;
+    transform-origin: left;
+    transform: scaleX(1);
+}
+
+section {
+    display: flex;
+    min-height: 100vh;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(to bottom, #f7f7fe, #dff1ff);
+}
+
+section .colour {
+    position: absolute;
+    filter: blur(150px);
+}
+
+section .colour:nth-child(1) {
+    top: -35rem;
+    width: 60rem;
+    height: 60rem;
+    background: #0ba1a1;
+}
+
+section .colour:nth-child(2) {
+    left: 10rem;
+    width: 50rem;
+    height: 50rem;
+    bottom: -15rem;
+    background: #ffa500;
+}
+
+section .colour:nth-child(3) {
+    right: 10rem;
+    bottom: 5rem;
+    width: 30rem;
+    height: 30rem;
+    background: #2b67f3;
+}
+
+.box {
+    position: relative;
+}
+
+.box .square {
+    position: absolute;
+    border-radius: 1rem;
+    backdrop-filter: blur(5px);
+    background: rgba(255, 255, 255, 0.1);
+    animation-delay: calc(-1s * var(--i));
+    animation: animate 10s linear infinite;
+    box-shadow: 0 25px 45px rgba(0, 0, 0, 0.1);
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    border-right: 1px solid rgba(255, 255, 255, 0.2);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+@keyframes animate {
+
+    0%,
+    100% {
+        transform: translateY(-4rem);
+    }
+
+    50% {
+        transform: translateY(4rem);
+    }
+}
+
+.box .square:nth-child(1) {
+    top: -5rem;
+    left: -6rem;
+    width: 10rem;
+    height: 10rem;
+}
+
+.box .square:nth-child(2) {
+    z-index: 2;
+    top: 15rem;
+    left: -10rem;
+    width: 12rem;
+    height: 12rem;
+}
+
+.box .square:nth-child(3) {
+    z-index: 2;
+    width: 8rem;
+    height: 8rem;
+    right: -5rem;
+    bottom: -6rem;
+}
+
+.box .square:nth-child(4) {
+    left: 10rem;
+    width: 5rem;
+    height: 5rem;
+    bottom: -8rem;
+}
+
+.box .square:nth-child(5) {
+    top: -8rem;
+    left: 14rem;
+    width: 6rem;
+    height: 6rem;
+}
+
+.container {
+    width: 40rem;
+    display: flex;
+    min-height: 40rem;
+    position: relative;
+    border-radius: 1rem;
+    align-items: center;
+    justify-content: center;
+    backdrop-filter: blur(5px);
+    background: rgba(46, 43, 43, 0.1);
+    box-shadow: 0 25px 45px rgba(0, 0, 0, 0.1);
+    border: 1.8px solid rgba(255, 255, 255, 0.5);
+    border-right: 1px solid rgba(255, 255, 255, 0.2);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.form {
+    width: 100%;
+    height: 100%;
+    padding: 4rem;
+    position: relative;
+}
+
+.form h2 {
+    color: #fff;
+    font-size: 3rem;
+    font-weight: 600;
+    position: relative;
+    letter-spacing: .15rem;
+    margin-bottom: 5rem;
+    text-align: center;
+}
+
+/* .form h2::before {
+    left: 50;
+    width: 80px;
+    height: 4px;
+    content: "";
+    bottom: -10px;
+    background: #4ae2a8;
+    position: absolute;
+} */
+
+.form h2 {
+    position: relative;
+    right: .5cm;
+    font-size: 3.5em;
+    color: whitesmoke;
+    text-decoration: none;
+    font-weight: 600;
+    margin-left: 4rem;
+}
+
+.form h2::after {
+    content: '';
+    position: absolute;
+    left: 2cm;
+    bottom: -.6rem;
+    width: 50%;
+    height: .3rem;
+    background: #e6eaeb;
+    border-radius: .5rem;
+    transform: scale(0);
+    transition: transform .5s;
+}
+
+.form h2:hover::after {
+    transform-origin: center;
+    transform: scale(1);
+}
+
+.form .input__box {
+    height: 5rem;
+    width: 100%;
+    margin-top: 2rem;
+    text-align: center;
+}
+
+.form .input__box input {
+    width: 100%;
+    color: #fff;
+    border: none;
+    outline: none;
+    font-size: 1.6rem;
+    padding: 1rem 2rem;
+    letter-spacing: .1rem;
+    border-radius: 3.5rem;
+    background: rgba(255, 255, 255, 0.2);
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+    border-right: 1px solid rgba(255, 255, 255, 0.2);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.form::placeholder {
+    color: #fff;
+}
+
+.form .input__box input[type="submit"] {
+    color: #504a4a;
+    cursor: pointer;
+    background: #fff;
+    max-width: 15rem;
+    font-weight: 600;
+    margin-bottom: 2rem;
+}
+
+.form .checkbox {
+    color: rgb(65, 57, 57);
+    font-size: 1.4rem;
+}
+
+.forget {
+    color: #0b2c8a;
+    margin-top: 1rem;
+    font-size: 1.4rem;
+}
+
+.forget a {
+    color: #0b2c8a;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+/* About : */
+
+.about_box {
+    width: 8px;
+    height: 12px;
+    object-fit: cover;
+}
+
+.card-img-top {
+    max-inline-size: 100%;
+    block-size: auto;
+}
+
+/* Add shadows to create the "card" effect */
+.card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    transition: 0.5s;
+    width: 100%;
+    text-align: center;
+    margin-left: 0;
+    margin-right: 50%;
+}
+
+.card:hover {
+    box-shadow: 0 8px 16px 0 rgba(.5, .5, .5, 1);
+}
