@@ -1,317 +1,84 @@
+<span style="font-family: verdana, geneva, sans-serif;">
+    <!DOCTYPE html>
+    <html lang="en">
 
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Profile</title>
+        <link rel="stylesheet" href="css/home_style.css">
+        <link rel="stylesheet" href="css/profile.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" />
+    </head>
 
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>User Dashboard</title>
-       <a href="issuebook.html"></a>
-    <a href="return.html"></a>
-    <a href="report.html"></a>
-    <a href="fine.html"></a>
-    <a href="profile.html"></a>
-    <link
-    rel="stylesheet"
-    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"/>
+    <body>
+        <div class="container">
+            <nav>
+                <ul>
+                    <li><a href="#" class="logo">
+                            <img src="source_files/logo.jpg" alt="">
+                            <span class="nav-item">DashBoard</span>
+                        </a></li>
+                    <li><a href="index.html">
+                            <i class="fas fa-home"></i>
+                            <span class="nav-item">Home</span>
+                        </a></li>
+                    <li><a href="profile.html">
+                            <i class="fas fa-user"></i>
+                            <span class="nav-item">Profile</span>
+                        </a></li>
+                    <li><a href="issuebook.html">
+                            <i class="fas fa-book"></i>
+                            <span class="nav-item">Issuebook</span>
+                        </a></li>
+                    <li><a href="return.html">
+                            <i class="fas fa-book"></i>
+                            <span class="nav-item">Return Book</span>
+                        </a></li>
+                    <li><a href="fine.html">
+                            <i class="fas fa-wallet"></i>
+                            <span class="nav-item">Fine</span>
+                        </a></li>
+                    <li><a href="report.html">
+                            <i class="fas fa-book"></i>
+                            <span class="nav-item">Report Book</span>
+                        </a></li>
+                    <li><a href="setting.html">
+                            <i class="fas fa-cog"></i>
+                            <span class="nav-item">Settings</span>
+                        </a></li>
+                    <li><a href="content.html">
+                            <i class="fas fa-question-circle"></i>
+                            <span class="nav-item">Help</span>
+                        </a></li>
+                    <li><a href="Login Page.html" class="logout">
+                            <i class="fas fa-sign-out-alt"></i>
+                            <span class="nav-item">Log out</span>
+                        </a></li>
+                </ul>
+            </nav>
 
-
-
-
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
-        
-        }
-
-        .dashboard {
-            background-color: #c3bdd1;
-            border-radius: 5px;
-            padding: 20px;
-            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-            width: 80%;
-            max-width: 600px;
-        }
-
-        .dashboard h1 {
-            margin-bottom: 20px;
-            text-align: center;
-            padding: 100%;
-        }
-
-        .dashboard-section {
-            background-color: #f7f7f7;
-            border-radius: 5px;
-            padding: 100px;
-            text-align: center;
-            text-decoration: underline;
-            margin-bottom: 20px;
-            animation: fadeIn 1s ease-in-out;
-
-        }
-
-        .dashboard-section h2 {
-            margin-bottom: 20px;
-        }
-
-        .dashboard-section p {
-            margin-bottom: 10px;
-        }
-
-        @keyframes fadeIn {
-            0% {
-                opacity: 0;
-            }
-            100% {
-                opacity: 1;
-            }
-        }
-
-
-        
-
-body {
-    display:grid;
-    /* padding-top: 1em;
-    padding-inline: 1.5em; */
-    justify-content: space-around;
-    align-items: center;
-    /* min-height: 100vh; */
-    background: linear-gradient(45deg, #fdba61, #ff5acd);
-}
-
-
-.card {
-    position: relative;
-    width: 350px;
-    height: 450px;
-    /* opacity: 0; */
-    background: none;
-    box-shadow: 0 35px 80px rgba(0, 0, 0, 0.15);
-    transition: 0.5s;
-}
-
-.card:hover {
-    height: 600px;
-    opacity: 100%;
-    margin-top: 3em;
-}  
-
-.imgbox {
-    position: absolute;
-    left: 50%;
-    top: -50px;
-    width: 150px;
-    height: 150px;
-    transform: translateX(-50%);
-    background: #fff;
-    border-radius: 19px;
-    overflow: hidden;
-    transition: 0.5s;
-    box-shadow: 0 15px 50px rgba(0, 0, 0, .35);
-}
-
-
-.imgbox img {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-}
-
-.card .content {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: flex-end;
-    overflow: hidden;
-}
-
-.card .content .details {
-    padding: 50%;
-    text-align: center;
-    width: 100%;
-    transition: 0.5s;
-    transform: translateY(150px);
-}
-
-.card:hover .content .details {
-    transform: translateY(0px);
-}
-
-.card .content .details h2 {
-    font-size: 1.50em;
-    font-weight: 600;
-    color: #302f2f;
-    line-height: 1.2em;
-}
-
-.card .content .details h2 span {
-    max-height: fit-content;
-    font-size: 0.70rem;
-    font-weight: 500;
-    opacity: 0.5;
-}
-
-.card .content .details .data {
-    text-align: left;
-    font-size: 1.2rem;
-    padding-top: 1rem;
-}
-
-.card .content .details .data span {
-    font-size: 1.2rem;
-    text-align: left;
-    color: #000000;
-    margin-right: .5rem;
-} 
-
-
-.sidebar{
-    position: fixed;
-    top: 0;
-    left: 0;
-    bottom: 0;
-    width: 50px;
-    height: 100vh;
-    padding: 0.17rem;
-    color:#fff ;
-    overflow: hidden;
-    transition: all 0.5s linear;
-    background: rgba(113,99,186,255);
-}
-.sidebar:hover{
-    width: 200px;
-    transition: 0.1s;
-}
-
-
-
-.logo{
-    height:80 ;
-    padding: 16px;
-}
-.menu{
-    height:88%;
-    position: relative;
-    list-style: none;
-    padding: 0;
-}
-.menu li{
-    padding:1rem;
-    margin:8px 0;
-    border-radius: all 0.5s ease-in-out;
-
-}
-.menu li:hover,
-active{
-    background: #e0e0e058;
-}
-.menu a{
-    color:#fff;
-    font-size: 14px;
-    text-decoration: none;
-    display: flex;
-    align-items: center;
-    gap: 1.5rem;
-
-}
-.menu a span{
-    overflow:hidden;
-
-}
-.menu a i{
-    font-size: 1.2rem;
-}
-.logout{
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    width: 100%;}
-
-</style>
-<body>
-
-
-
-
-
-    <div class="sidebar">
-        <div class="logo"></div>
-        <ul class="menu">
-<li class="active" >
-<a href="index.html">
-<i class="fa fa-tachometer"></i>
-<span>Dashboard</span>
-</a>
-</li>
-<li>
-    <a href="profile.html">
-    <i class="fa fa-user"></i>
-    <span>Profile</span>
-    </a>
-    </li>
-    <li>
-        <a href="issuebook.html">
-        <i class="fa fa-book"></i>
-        <span>Issuebook</span>
-        </a>
-        </li>
-
-        <li>
-            <a href="return.html">
-            <i class="fa fa-book"></i>
-            <span>Book return</span>
-            </a>
-            </li>
-            <li>
-                <a href="report.html">
-                <i class="fa fa-book"></i>
-                <span>Book report</span>
-                </a>
-                </li>
-        <li>
-            <a href="fine.html">
-         <i class="fa fa-money" aria-hidden="true"></i>
-            <span>fine</span>
-            </a>
-            </li>
-            <li>
-                <a href="setting.html">
-                <i class="fa fa-cog"></i>
-                <span>Setting</span>
-                </a>
-                </li>
-                <li class="logout">
-                    <a href="#">
-                    <i class="fa fa-sign-out"></i>
-                    <span>Logout</span>
-                    </a>
-                    </li>
-        </ul>
-    </div>
-    <div class="card">
-        <div class="imgbox">
-            <img src="source/Snapchat-1728524468.jpg" alt="santosh">
-
+            <div class="card">
+                <div class="imgbox">
+                    <img src="source_files/logo.jpg" alt="img">
+                </div>
+                <div class="content">
+                    <div class="top">
+                        <h2>Santosh Parsad</h2><br>
+                        <span>Bachelor's of Computer Application</span><br>
+                    </div>
+                    <div class="data">
+                        <h3>User id :</h3>
+                        <span>22151114</span>
+                        <h3>Gmail :</h3>
+                        <span>santosh@gmail.com</span>
+                        <h3>Course :</h3>
+                        <span>BCA</span>
+                    </div>
+                </div>
+            </div>
         </div>
-        <div class="dashboard-section">
-            <h2>Account</h2>
-            <p>Account number: 123456789</p>
-            <p>Username: santoshprasad</p>
-            <p>Email: prasad.sant@example.com</p>
-        </div>
-    </div>
+    </body>
 
-</body>
-</html>
+    </html>
+</span>
